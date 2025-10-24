@@ -31,4 +31,4 @@ spec:
       name: "ejercicio-codigo-s2i:latest"
   postCommit:
     script: |
-      oc rollout restart deployment/mi-deployment -n lpintofsgrp-dev || true
+      oc rollout restart deployment/mi-deployment-2 -n lpintofsgrp-dev || true
