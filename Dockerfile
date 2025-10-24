@@ -1,6 +1,8 @@
 # Imagen base
-FROM lpintofsgrp/practicabase:1
-#FROM python:3.10-slim
+#FROM lpintofsgrp/practicabase:1
+FROM python:3.14-slim
+
+RUN addgroup --system appgroup && adduser --system --group appuser
 
 # Establece el directorio de trabajo
 WORKDIR /app
